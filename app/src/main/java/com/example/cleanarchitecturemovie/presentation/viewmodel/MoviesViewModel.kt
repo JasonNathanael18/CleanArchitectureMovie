@@ -2,9 +2,9 @@ package com.example.cleanarchitecturemovie.presentation.viewmodel
 
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
-import com.example.cleanarchitecturemovie.data.source.remote.Resource
-import com.example.cleanarchitecturemovie.domain.model.Movie
-import com.example.cleanarchitecturemovie.domain.usecase.GetPopularMovies
+import com.example.domain.model.Movie
+import com.example.domain.usecase.GetPopularMovies
+import com.example.domain.utils.Resource
 import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.flow.*
 import kotlinx.coroutines.launch

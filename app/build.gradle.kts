@@ -22,13 +22,13 @@ android {
 
     buildTypes {
         debug {
-            buildConfigField("String", "base_url", "\"https://api.github.com/\"")
+            buildConfigField("String", "base_url", "\"https://api.themoviedb.org/3/\"")
             isMinifyEnabled = false
             isShrinkResources = false
             proguardFiles(getDefaultProguardFile("proguard-android-optimize.txt"), "proguard-rules.pro")
         }
         release {
-            buildConfigField("String", "base_url", "\"https://api.github.com/\"")
+            buildConfigField("String", "base_url", "\"https://api.themoviedb.org/3/\"")
             isMinifyEnabled = false
             isShrinkResources = false
             proguardFiles(getDefaultProguardFile("proguard-android-optimize.txt"), "proguard-rules.pro")
@@ -60,9 +60,9 @@ android {
 }
 
 dependencies {
-//    addDataModule()
-//    addDomainModule()
-//    addDiModule()
+    addDataModule()
+    addDomainModule()
+    addDiModule()
 //    addFeatureModule()
 //    addRouterModule()
 //    addUiComponentModule()

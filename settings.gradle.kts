@@ -36,3 +36,6 @@ dependencyResolutionManagement {
 }
 rootProject.name = "CleanArchitectureMovie"
 include(":app")
+include(":di")
+include(":data")
+include(":domain")
