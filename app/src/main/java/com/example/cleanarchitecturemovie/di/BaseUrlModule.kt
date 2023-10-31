@@ -1,5 +1,6 @@
 package com.example.cleanarchitecturemovie.di
 
+import com.example.cleanarchitecturemovie.BuildConfig
 import com.example.di.qualifier.AppBaseUrl
 import dagger.Module
 import dagger.Provides
@@ -11,5 +12,5 @@ import dagger.hilt.components.SingletonComponent
 class BaseUrlModule{
     @Provides
     @AppBaseUrl
-    fun provideBaseUrl():String = "https://api.themoviedb.org/3/"
+    fun provideBaseUrl():String = BuildConfig.base_url
 }
