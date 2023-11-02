@@ -1,4 +1,4 @@
-package com.example.data.source.remote
+package com.example.di.moviesmodule.module
 
 import okhttp3.Interceptor
 import okhttp3.Response
@@ -16,6 +16,7 @@ class RequestInterceptor : Interceptor {
             .build()
         val request = originalRequest.newBuilder()
             .url(newUrl)
+            .addHeader("Accept", "application/json")
             .build()
         return chain.proceed(request)
     }

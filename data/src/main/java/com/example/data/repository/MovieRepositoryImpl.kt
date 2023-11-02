@@ -43,7 +43,6 @@ class MovieRepositoryImpl @Inject constructor(
         popularMoviesDao: PopularMoviesDao,
         movieDao: MovieDao
     ) {
-
         val remotePopularMovies = movieApiService.getPopularMovies()
         popularMoviesDao.insertPopularMovies(remotePopularMovies.toPopularMoviesEntity())
         movieDao.insertMovieList(remotePopularMovies.results.map { it.toMovieEntity() }) //now insert newly fetched data to db

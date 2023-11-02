@@ -32,11 +32,11 @@ object RetrofitModule {
 
     @Provides
     fun provideMoshiConverterFactory(moshi: Moshi): MoshiConverterFactory {
-        return   MoshiConverterFactory.create(moshi)
+        return MoshiConverterFactory.create(moshi)
     }
 
     @Provides
     fun provideMoshi(): Moshi {
-        return  Moshi.Builder().add(KotlinJsonAdapterFactory()).build()
+        return Moshi.Builder().add(KotlinJsonAdapterFactory()).build()
     }
 }
