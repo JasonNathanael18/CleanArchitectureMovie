@@ -38,7 +38,9 @@ class HomeFragment : Fragment() {
 
 
         btnMovieList?.setOnClickListener {
-            findNavController().navigate(HomeFragmentDirections.actionHomeFragmentToNextFragment())
+            findNavController().navigate(HomeFragmentDirections.actionHomeFragmentToNextFragment(
+                "Dari Home Nih"
+            ))
            // (requireActivity() as ToFlowNavigatable).navigateToFlow(NavigationFlow.MovieListFlow("Dari Home Nih"))
         }
     }

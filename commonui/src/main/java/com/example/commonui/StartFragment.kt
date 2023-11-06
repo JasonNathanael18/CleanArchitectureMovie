@@ -30,8 +30,8 @@ class StartFragment : Fragment() {
 //                1 -> (requireActivity() as ToFlowNavigatable).navigateToFlow(NavigationFlow.MovieDetailFlow("From start fragment"))
 //            }
 //        }
-        //(requireActivity() as ToFlowNavigatable).navigateToFlow(NavigationFlow.MovieListFlow)
+        (requireActivity() as ToFlowNavigatable).navigateToFlow(NavigationFlow.MovieListFlow)
 
-        (requireActivity() as ToFlowNavigatable).navigateToFlow(NavigationFlow.MovieDetailFlow("From start fragment"))
+        //(requireActivity() as ToFlowNavigatable).navigateToFlow(NavigationFlow.MovieDetailFlow("From start fragment"))
     }
 }

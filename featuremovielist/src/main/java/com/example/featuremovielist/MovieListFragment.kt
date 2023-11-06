@@ -11,7 +11,7 @@ import androidx.navigation.fragment.navArgs
 
 class MovieListFragment : Fragment() {
 
-    //private val movieListFragmentArgs: MovieListFragmentArgs by navArgs()
+    private val movieListFragmentArgs: MovieListFragmentArgs by navArgs()
 
     override fun onCreateView(
         inflater: LayoutInflater,
@@ -29,10 +29,10 @@ class MovieListFragment : Fragment() {
 //            }
 //        }
 
-//        movieListFragmentArgs.movieListData.let {
-//            if (it.isNotEmpty()) {
-//                Toast.makeText(requireContext(), movieListFragmentArgs.movieListData, Toast.LENGTH_SHORT).show()
-//            }
-//        }
+        movieListFragmentArgs.movieListData.let {
+            if (it.isNotEmpty()) {
+                Toast.makeText(requireContext(), movieListFragmentArgs.movieListData, Toast.LENGTH_SHORT).show()
+            }
+        }
     }
 }
