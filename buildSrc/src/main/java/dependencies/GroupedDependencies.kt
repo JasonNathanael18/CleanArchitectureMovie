@@ -29,5 +29,12 @@ internal val networkDependencies = listOf(
     Dependencies.okhHttp3Interceptor,
 )
 
+internal val navigationDependencies = listOf(
+    Dependencies.navigationUi,
+    Dependencies.navigationFragment,
+    Dependencies.navigationFragmentKtx,
+    Dependencies.fragment,
+)
+
 
 

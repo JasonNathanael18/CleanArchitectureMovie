@@ -1,20 +1,22 @@
 package plugins
+
 import dependencies.*
 
 plugins {
     id("com.android.library")
-    id ("org.jetbrains.kotlin.android")
+    id("org.jetbrains.kotlin.android")
     kotlin("kapt")
-    id ("dagger.hilt.android.plugin")
+    id("dagger.hilt.android.plugin")
+    id ("androidx.navigation.safeargs.kotlin")
 }
 
-android{
+android {
     compileSdk = AppConfig.compileSdkVersion
     defaultConfig {
         minSdk = AppConfig.minSdkVersion
         testInstrumentationRunner = AppConfig.testRunner
         consumerProguardFiles("consumer-rules.pro")
-        vectorDrawables{
+        vectorDrawables {
             useSupportLibrary = true
         }
     }
@@ -26,7 +28,7 @@ android{
         jvmTarget = "1.8"
     }
 
-    buildFeatures{
+    buildFeatures {
         compose = false
         viewBinding = true
     }
@@ -42,22 +44,23 @@ android{
     }
 }
 
-dependencies{
-//    addDiModule()
-//    addDomainModule()
-//    addRouterModule()
-//    //addCommonModule()
+dependencies {
+    addDiModule()
+    addDomainModule()
+    addNavigationModule()
+    addCommonModule()
 //    addUiComponentModule()
 //
 //    //addAndroidComposeDependencies()
-//    addAndroidUiDependencies()
-//    addAndroLifeCycleDependencies()
-//    addCoroutinesAndroidDependencies()
+    addAndroidUiDependencies()
+    addAndroLifeCycleDependencies()
+    addCoroutinesAndroidDependencies()
 //    //addCoilImageLoadingDependencies()
-//    addHiltDependencies()
-//    addAndroidTestsDependencies()
+    addHiltDependencies()
+    addAndroidTestsDependencies()
+    addNavigationDependencies()
 }
 
-kapt{
+kapt {
     correctErrorTypes = true
 }

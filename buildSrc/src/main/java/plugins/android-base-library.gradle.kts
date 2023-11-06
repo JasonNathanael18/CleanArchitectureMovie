@@ -43,7 +43,7 @@ android{
 }
 dependencies{
     //addAndroidComposeDependencies()
-//    addAndroidUiDependencies()
-//    addCoroutinesAndroidDependencies()
-//    addAndroidTestsDependencies()
+    addAndroidUiDependencies()
+    addCoroutinesAndroidDependencies()
+    addAndroidTestsDependencies()
 }

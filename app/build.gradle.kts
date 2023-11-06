@@ -4,6 +4,7 @@ plugins {
     id ("org.jetbrains.kotlin.android")
     kotlin("kapt")
     id ("dagger.hilt.android.plugin")
+    id ("androidx.navigation.safeargs.kotlin")
 }
 
 android {
@@ -63,10 +64,12 @@ dependencies {
     addDataModule()
     addDomainModule()
     addDiModule()
-//    addFeatureModule()
+
+    addFeatureModule()
 //    addRouterModule()
 //    addUiComponentModule()
-//    addCommonModule()
+    addCommonModule()
+    addNavigationModule()
 
     addAndroidUiDependencies()
     addAndroLifeCycleDependencies()

@@ -24,6 +24,10 @@ fun DependencyHandler.addUiComponentModule(){
     add("implementation", project(ModulesDep.uiComponent))
 }
 
+fun DependencyHandler.addNavigationModule(){
+    add("implementation", project(ModulesDep.navigation))
+}
+
 fun DependencyHandler.addFeatureModule(){
     featureModule.forEach {
         add("implementation", project(it))

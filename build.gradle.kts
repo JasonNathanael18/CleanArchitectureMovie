@@ -5,6 +5,7 @@ plugins {
     id("org.jetbrains.kotlin.android") apply (false)
     id("com.google.dagger.hilt.android") apply (false)
     id("org.jetbrains.kotlin.jvm") apply (false)
+    id("androidx.navigation.safeargs.kotlin") apply (false)
 }
 
 

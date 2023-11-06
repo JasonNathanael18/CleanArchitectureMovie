@@ -37,6 +37,11 @@ internal object Dependencies {
 
     const val multidex = "androidx.multidex:multidex:2.0.1"
 
+    const val navigationFragmentKtx = "androidx.navigation:navigation-fragment-ktx:${Versions.navigation}"
+    const val navigationFragment = "androidx.navigation:navigation-fragment:${Versions.navigation}"
+    const val navigationUi = "androidx.navigation:navigation-ui-ktx:${Versions.navigation}"
+    const val fragment = "androidx.fragment:fragment-ktx:1.6.2"
+
     //const val jUnit = "androidx.compose.ui:ui-test-junit4:${Versions.composeVersion}"
     const val jUnit = "junit:junit:4.13.2"
     const val jUnitExt = "androidx.test.ext:junit:${Versions.jUnitExtVersion}"

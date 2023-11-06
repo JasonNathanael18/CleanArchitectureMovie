@@ -63,3 +63,9 @@ fun DependencyHandler.addAndroidTestsDependencies() {
     //add("debugImplementation",Dependencies.composeTooling)
     //add("debugImplementation",Dependencies.composeTestManifest)
 }
+
+fun DependencyHandler.addNavigationDependencies(configurationName:String = "implementation"){
+    navigationDependencies.forEach {
+        add(configurationName,it)
+    }
+}

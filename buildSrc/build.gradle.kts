@@ -31,4 +31,5 @@ dependencies {
     implementation("com.android.tools.build:gradle:${project.properties["androidGradlePluginVersion"]}")
     implementation("org.jetbrains.kotlin:kotlin-gradle-plugin:${project.properties["kotlinVersion"]}")
     implementation("com.google.dagger:hilt-android-gradle-plugin:${System.getProperty("hiltVersion")}")
+    implementation("androidx.navigation:navigation-safe-args-gradle-plugin:${System.getProperty("navigationSafeArgsVersion")}")
 }

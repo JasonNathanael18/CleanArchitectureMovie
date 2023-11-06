@@ -17,6 +17,7 @@ pluginManagement {
                 id("org.jetbrains.kotlin.android") version(extra.properties["kotlinVersion"].toString())
                 id("org.jetbrains.kotlin.jvm") version(extra.properties["kotlinVersion"].toString())
                 id("com.google.dagger.hilt.android") version(extra.properties["hiltVersion"].toString())
+                id ("androidx.navigation.safeargs.kotlin") version(extra.properties["navigationSafeArgsVersion"].toString())
             }
         }
     }
@@ -39,3 +40,7 @@ include(":app")
 include(":di")
 include(":data")
 include(":domain")
+include(":navigation")
+include(":commonui")
+include(":featuremovielist")
+include(":featuremoviedetail")
