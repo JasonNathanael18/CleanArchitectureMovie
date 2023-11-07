@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/itemUser"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:paddingBottom="18dp">
+
+    <ImageView
+        android:id="@+id/ivThumbnail"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:layout_marginTop="24dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:src="@drawable/email" />
+
+    <TextView
+        android:id="@+id/labelTitle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        tools:text="jasonnathanael"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@id/ivThumbnail"
+        app:layout_constraintTop_toTopOf="@id/ivThumbnail"
+        android:layout_marginStart="8dp"/>
+
+    <TextView
+        android:id="@+id/labelReleaseDate"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textSize="10sp"
+        app:layout_constraintBottom_toBottomOf="@+id/labelTitle"
+        app:layout_constraintStart_toEndOf="@id/labelTitle"
+        app:layout_constraintTop_toTopOf="@+id/labelTitle"
+        tools:text="jasonnathanael18"
+        android:layout_marginStart="8dp"/>
+
+    <TextView
+        android:id="@+id/labelOverview"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textSize="14sp"
+        android:layout_marginTop="4dp"
+        app:layout_constraintStart_toStartOf="@+id/labelTitle"
+        app:layout_constraintTop_toBottomOf="@id/labelTitle"
+        tools:text="jasonnathanael bio" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -8,7 +8,10 @@ import com.example.navigation.NavigationFlow
 import com.example.navigation.Navigator
 import com.example.navigation.ToFlowNavigatable
 import com.google.android.material.bottomnavigation.BottomNavigationView
+import dagger.hilt.android.AndroidEntryPoint
+import javax.inject.Inject
 
+@AndroidEntryPoint
 class RootActivity : AppCompatActivity(), ToFlowNavigatable {
     private val navigator: Navigator = Navigator()
 

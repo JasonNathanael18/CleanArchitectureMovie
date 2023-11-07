@@ -7,7 +7,9 @@ import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import com.example.navigation.NavigationFlow
 import com.example.navigation.ToFlowNavigatable
+import dagger.hilt.android.AndroidEntryPoint
 
+@AndroidEntryPoint
 class StartFragment : Fragment() {
     override fun onCreateView(
         inflater: LayoutInflater,

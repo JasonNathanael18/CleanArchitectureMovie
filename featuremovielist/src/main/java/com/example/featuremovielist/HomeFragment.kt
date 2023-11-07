@@ -7,10 +7,18 @@ import android.view.ViewGroup
 import android.widget.Button
 import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.findNavController
+import com.example.domain.model.TestingPassData
+import com.example.navigation.DataConvert
 import com.example.navigation.NavigationFlow
 import com.example.navigation.ToFlowNavigatable
+import dagger.hilt.android.AndroidEntryPoint
+import javax.inject.Inject
 
+@AndroidEntryPoint
 class HomeFragment : Fragment() {
+
+    @Inject
+    lateinit var dataConvert: DataConvert
     override fun onCreateView(
         inflater: LayoutInflater,
         container: ViewGroup?,
@@ -38,10 +46,14 @@ class HomeFragment : Fragment() {
 
 
         btnMovieList?.setOnClickListener {
-            findNavController().navigate(HomeFragmentDirections.actionHomeFragmentToNextFragment(
-                "Dari Home Nih"
-            ))
-           // (requireActivity() as ToFlowNavigatable).navigateToFlow(NavigationFlow.MovieListFlow("Dari Home Nih"))
+            val userJsonData = dataConvert.toJson(TestingPassData("Dari Home Nih Pake Model")) ?: ""
+            findNavController().navigate(
+                HomeFragmentDirections.actionHomeFragmentToNextFragment(
+                    // "Dari Home Nih"
+                    userJsonData
+                )
+            )
+            // (requireActivity() as ToFlowNavigatable).navigateToFlow(NavigationFlow.MovieListFlow("Dari Home Nih"))
         }
     }
 }
