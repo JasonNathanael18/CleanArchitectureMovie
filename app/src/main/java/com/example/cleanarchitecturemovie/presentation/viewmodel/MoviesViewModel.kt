@@ -25,7 +25,11 @@ class MoviesViewModel @Inject constructor(
             viewModelState.value.toUiState()
         )
 
-    fun getMovies() {
+    init {
+        getMovies()
+    }
+
+    private fun getMovies() {
         viewModelScope.launch {
             getPopularMovies().collect { result ->
                 when (result) {

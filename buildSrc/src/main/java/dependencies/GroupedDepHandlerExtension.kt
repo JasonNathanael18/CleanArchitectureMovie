@@ -8,6 +8,12 @@ fun DependencyHandler.addAndroidUiDependencies(){
     }
 }
 
+fun DependencyHandler.addAndroidComposeDependencies(){
+    androidComposeDependencies.forEach {
+        add("implementation",it)
+    }
+}
+
 fun DependencyHandler.addAndroLifeCycleDependencies(){
     androidxLifeCycleDependencies.forEach {
         add("implementation",it)
@@ -16,6 +22,7 @@ fun DependencyHandler.addAndroLifeCycleDependencies(){
 
 fun DependencyHandler.addHiltDependencies() {
     add("implementation",Dependencies.hiltAndroid)
+    add("implementation",Dependencies.hiltNavCompose)
     add("kapt",Dependencies.hiltCompiler)
 }
 

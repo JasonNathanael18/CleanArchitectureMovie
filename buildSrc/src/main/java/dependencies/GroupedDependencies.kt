@@ -9,11 +9,23 @@ internal val androidUiDependencies = listOf(
     Dependencies.activity
 )
 
+internal val androidComposeDependencies = listOf(
+    Dependencies.coreKtx,
+    Dependencies.composeMaterial,
+    Dependencies.composeActivity,
+    Dependencies.composeUi,
+    Dependencies.composePreviewUi,
+    Dependencies.composeNavigation,
+    Dependencies.material3,
+)
+
 internal val androidxLifeCycleDependencies = listOf(
-    Dependencies.lifecycleViewModel,
+    //Dependencies.lifecycleViewModel,
+    Dependencies.viewModel,
     Dependencies.lifecycleLiveData,
     Dependencies.lifecycleCommon,
-    Dependencies.lifecycleRuntime,
+   // Dependencies.lifecycleRuntime,
+    Dependencies.runtimeCompose,
     Dependencies.lifecycleExtensions,
 )
 

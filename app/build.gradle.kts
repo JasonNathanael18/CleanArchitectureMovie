@@ -44,8 +44,7 @@ android {
         jvmTarget = "1.8"
     }
     buildFeatures{
-        compose = false
-        viewBinding = true
+        compose = true
     }
 
     composeOptions {
@@ -68,7 +67,8 @@ dependencies {
 //    addUiComponentModule()
 //    addCommonModule()
 
-    addAndroidUiDependencies()
+    //addAndroidUiDependencies()
+    addAndroidComposeDependencies()
     addAndroLifeCycleDependencies()
     addCoroutinesAndroidDependencies()
     addHiltDependencies()

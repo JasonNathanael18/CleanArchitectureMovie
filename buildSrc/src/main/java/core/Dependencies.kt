@@ -7,14 +7,28 @@ internal object Dependencies {
     const val constraintLayout = "androidx.constraintlayout:constraintlayout:${Versions.constraintLayout}"
     const val activity = "androidx.activity:activity-ktx:1.7.0"
 
-    const val lifecycleViewModel = "androidx.lifecycle:lifecycle-viewmodel-ktx:${Versions.lifecycleVersion}"
+    const val composeMaterial = "androidx.compose.material:material:${Versions.materialVersion}"
+    const val composeActivity = "androidx.activity:activity-compose:${Versions.activityComposeVersion}"
+    const val composeUi = "androidx.compose.ui:ui:${Versions.composeVersion}"
+    const val composeNavigation = "androidx.navigation:navigation-compose:${Versions.composeNavigationVersion}"
+    const val composePreviewUi = "androidx.compose.ui:ui-tooling-preview:${Versions.composeVersion}"
+    const val material3 = "androidx.compose.material3:material3:1.1.2"
+
+    //const val lifecycleViewModel = "androidx.lifecycle:lifecycle-viewmodel-ktx:${Versions.lifecycleVersion}"
+    const val viewModel = "androidx.lifecycle:lifecycle-viewmodel-compose:${Versions.lifecycleVersion}"
+
     const val lifecycleLiveData = "androidx.lifecycle:lifecycle-livedata-ktx:${Versions.lifecycleVersion}"
     const val lifecycleCommon = "androidx.lifecycle:lifecycle-common:${Versions.lifecycleVersion}"
-    const val lifecycleRuntime = "androidx.lifecycle:lifecycle-runtime-ktx:${Versions.lifecycleVersion}"
+    //const val lifecycleRuntime = "androidx.lifecycle:lifecycle-runtime-ktx:${Versions.lifecycleVersion}"
+    const val runtimeCompose = "androidx.lifecycle:lifecycle-runtime-compose:${Versions.runtimeComposeVersion}"
+
     const val lifecycleExtensions = "androidx.lifecycle:lifecycle-extensions:${Versions.lifecycleExtensionVersion}"
 
     val hiltAndroid = "com.google.dagger:hilt-android:${Versions.hiltVersion}"
     val hiltCompiler = "com.google.dagger:hilt-android-compiler:${Versions.hiltVersion}"
+    const val hiltNavCompose = "androidx.hilt:hilt-navigation-compose:${Versions.hiltNavigationComposeVersion}"
+
+    const val coil = "io.coil-kt:coil-compose:${Versions.coilVersion}"
 
     const val retrofit = "com.squareup.retrofit2:retrofit:${Versions.retrofitVersion}"
     const val moshiConverter = "com.squareup.retrofit2:converter-moshi:${Versions.moshiConverter}"
